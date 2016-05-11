@@ -6,9 +6,9 @@ dx=0.01;			% resolucion espacial
 x=(-1:dx:1);	% grid en x
 Lx=length(x);	% numero de puntos
 dt=0.01;			% incremento temporal
-tmax=25;			% tiempo maximo
+tmax=100;			% tiempo maximo
 jrec=50;			% intervalo de registro
-k=1.2;
+k=0.5;
 B=4;
 io=0.1;
 D=1e-07;
@@ -16,7 +16,7 @@ sigma=0.1;
 % initial conditions
 t=0;					% tiempo
 j=0;					% indice de registro
-cont=0;
+cont=0;					% contador de gráficas
 % inicializar c y i 
 c=exp(-1*x.^2/(2*sigma));
 i=io;
